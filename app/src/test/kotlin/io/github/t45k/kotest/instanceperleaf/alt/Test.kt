@@ -2,7 +2,6 @@ package io.github.t45k.kotest.instanceperleaf.alt
 
 import io.kotest.core.spec.IsolationMode
 import io.kotest.core.spec.style.DescribeSpec
-import io.kotest.engine.runBlocking
 import io.kotest.matchers.shouldBe
 
 class Test : DescribeSpec({
