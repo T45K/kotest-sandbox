@@ -6,7 +6,7 @@ import io.kotest.engine.runBlocking
 import io.kotest.matchers.shouldBe
 
 class Test : DescribeSpec({
-    isolationMode = IsolationMode.InstancePerRoot
+    isolationMode = IsolationMode.InstancePerLeaf
 
     var count = 0
 
@@ -26,36 +26,6 @@ class Test : DescribeSpec({
                 count shouldBe 1
             }
         }
-    }
-
-    describe("d2") {
-        it("i3") {
-            count shouldBe 0
-        }
-    }
-})
-
-class Test2 : DescribeSpec({
-    isolationMode = IsolationMode.InstancePerRoot
-
-    var count = 0
-
-    runBlocking {
-        suspend {
-            count++
-
-            it("i1") {
-                count shouldBe 1
-            }
-        }()
-
-        suspend {
-            count++
-
-            it("i2") {
-                count shouldBe 1
-            }
-        }()
     }
 
     describe("d2") {
