@@ -25,12 +25,27 @@ class Test : DescribeSpec({
             }
         }
     }
-
-    describe("d2") {
-        println("d2")
-
-        it("i3") {
-            println("i3")
-        }
-    }
 })
+
+/*
+results of Kotest 6.0.0
+d1
+c1
+d1
+c1
+i1
+c2
+d1
+c2
+i2
+ */
+
+/*
+results of Kotest 5.9.x
+d1
+c1
+i1
+d1
+c2
+i2
+ */
