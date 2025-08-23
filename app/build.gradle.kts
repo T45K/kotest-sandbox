@@ -7,7 +7,8 @@ repositories {
 }
 
 dependencies {
-    testImplementation("io.kotest:kotest-runner-junit5:6.0.0.M15")
+    testImplementation("io.kotest:kotest-runner-junit5:6.0.0")
+    testImplementation("io.kotest:kotest-extensions-spring:6.0.0")
 }
 
 java {

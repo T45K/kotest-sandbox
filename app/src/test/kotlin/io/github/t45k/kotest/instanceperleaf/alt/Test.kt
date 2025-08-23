@@ -10,17 +10,14 @@ class Test : DescribeSpec({
     var count = 0
 
     describe("d1") {
+        count++
         context("c1") {
-            count++
-
             it("i1") {
                 count shouldBe 1
             }
         }
 
         context("c2") {
-            count++
-
             it("i2") {
                 count shouldBe 1
             }
