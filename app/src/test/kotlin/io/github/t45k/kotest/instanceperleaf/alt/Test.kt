@@ -28,6 +28,17 @@ class Test : DescribeSpec({
 })
 
 /*
+results of Kotest 6.0.1
+d1
+c1
+i1
+c2
+d1
+c2
+i
+ */
+
+/*
 results of Kotest 6.0.0
 d1
 c1
